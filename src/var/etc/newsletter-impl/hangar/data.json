@@ -1,0 +1,81 @@
+{
+    "newsletter\\impl\\common\\bo\\NewsletterCiArticle": {
+        "title": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "description": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\TextPropDef",
+            "props": {
+                "size": "524280",
+                "charset": null
+            }
+        },
+        "fileImage": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\ManagedFilePropDef",
+            "props": {
+                "length": "255"
+            }
+        },
+        "link": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "linkLabel": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "picPos": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        }
+    },
+    "newsletter\\impl\\common\\bo\\NewsletterCiSponsoredArticle": {
+        "fileImage": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\ManagedFilePropDef",
+            "props": {
+                "length": "255"
+            }
+        },
+        "title": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "textHtml": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\TextPropDef",
+            "props": {
+                "size": "524280",
+                "charset": null
+            }
+        },
+        "link": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        },
+        "linkLabel": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\scalar\\StringPropDef",
+            "props": {
+                "length": "255",
+                "charset": null
+            }
+        }
+    }
+}

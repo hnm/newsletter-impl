@@ -1,0 +1,446 @@
+{
+    "types": {
+        "newsletter-impl-common-newsletter-ci-article": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\common\\bo\\NewsletterCiArticle",
+            "dataSourceName": null,
+            "label": "Artikel",
+            "pluralLabel": "Artikel",
+            "iconType": null,
+            "identityStringPattern": "{title} [{id}]",
+            "fields": {
+                "title": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "multiline": false
+                    },
+                    "label": "Title",
+                    "objectProperty": "title",
+                    "entityProperty": "title"
+                },
+                "descriptionHtml": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\cke\\CkeEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "mode": "simple",
+                        "linkProviders": [],
+                        "tablesSupported": false,
+                        "bbcode": false
+                    },
+                    "label": "Text",
+                    "objectProperty": "descriptionHtml",
+                    "entityProperty": "descriptionHtml"
+                },
+                "fileImage": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\file\\FileEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "allowedExtensions": [
+                            "png",
+                            "jpg",
+                            "jpeg",
+                            "gif"
+                        ],
+                        "dimensionImportMode": "all",
+                        "extraThumbDimensions": [],
+                        "checkImageResourceMemory": true,
+                        "multiUploadAvailable": false
+                    },
+                    "label": "Bild",
+                    "objectProperty": "fileImage",
+                    "entityProperty": "fileImage"
+                },
+                "link": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\UrlEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "relativeAllowed": false,
+                        "allowedProtocols": [],
+                        "autoScheme": "http"
+                    },
+                    "label": "Link",
+                    "objectProperty": "link",
+                    "entityProperty": "link"
+                },
+                "linkLabel": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "multiline": false
+                    },
+                    "label": "Link Label",
+                    "objectProperty": "linkLabel",
+                    "entityProperty": "linkLabel"
+                },
+                "picPos": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\enum\\EnumEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "options": {
+                            "left": "Links",
+                            "right": "Rechts",
+                            "": null
+                        },
+                        "associatedGuiProps": []
+                    },
+                    "label": "Bild Position",
+                    "objectProperty": "picPos",
+                    "entityProperty": "picPos"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "newsletter-impl-common-newsletter-ci-image": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\common\\bo\\NewsletterCiImage",
+            "dataSourceName": null,
+            "label": "Bild",
+            "pluralLabel": "Bilder",
+            "iconType": null,
+            "fields": {
+                "fileImage": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\file\\FileEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": true,
+                        "draftable": false,
+                        "allowedExtensions": [
+                            "png",
+                            "jpg",
+                            "jpeg",
+                            "gif"
+                        ],
+                        "dimensionImportMode": "all",
+                        "extraThumbDimensions": [],
+                        "checkImageResourceMemory": true,
+                        "multiUploadAvailable": false
+                    },
+                    "label": "Bild",
+                    "objectProperty": "fileImage",
+                    "entityProperty": "fileImage"
+                },
+                "link": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\UrlEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "relativeAllowed": false,
+                        "allowedProtocols": [],
+                        "autoScheme": "http"
+                    },
+                    "label": "Link",
+                    "objectProperty": "link",
+                    "entityProperty": "link"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "newsletter-impl-common-newsletter-ci-wysiwyg": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\common\\bo\\NewsletterCiWysiwyg",
+            "dataSourceName": null,
+            "label": "Freitext",
+            "pluralLabel": "Freitexte",
+            "iconType": null,
+            "fields": {
+                "title": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "multiline": false
+                    },
+                    "label": "Titel",
+                    "objectProperty": "title",
+                    "entityProperty": "title"
+                },
+                "textHtml": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\cke\\CkeEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "mode": "simple",
+                        "linkProviders": [],
+                        "tablesSupported": false,
+                        "bbcode": false
+                    },
+                    "label": "Text",
+                    "objectProperty": "textHtml",
+                    "entityProperty": "textHtml"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "newsletter-impl-common-newsletter-ci-salutation": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\common\\bo\\NewsletterCiSalutation",
+            "dataSourceName": null,
+            "label": "Anrede",
+            "pluralLabel": "Anreden",
+            "iconType": null,
+            "fields": [],
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "newsletter-impl-common-newsletter-ci-featured-article": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\common\\bo\\NewsletterCiFeaturedArticle",
+            "dataSourceName": null,
+            "label": "Hauptartikel",
+            "pluralLabel": "Hauptartikel",
+            "iconType": null,
+            "identityStringPattern": "{title} [{id}]",
+            "fields": {
+                "title": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "multiline": false
+                    },
+                    "label": "Titel",
+                    "objectProperty": "title",
+                    "entityProperty": "title"
+                },
+                "lead": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "500",
+                        "multiline": true
+                    },
+                    "label": "Lead",
+                    "objectProperty": "lead",
+                    "entityProperty": "lead"
+                },
+                "textHtml": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\cke\\CkeEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "mode": "normal",
+                        "linkProviders": [],
+                        "tablesSupported": false,
+                        "bbcode": false
+                    },
+                    "label": "Text",
+                    "objectProperty": "textHtml",
+                    "entityProperty": "textHtml"
+                },
+                "fileImage": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\file\\FileEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "allowedExtensions": [
+                            "png",
+                            "jpg",
+                            "jpeg",
+                            "gif"
+                        ],
+                        "dimensionImportMode": "all",
+                        "extraThumbDimensions": [],
+                        "checkImageResourceMemory": true,
+                        "multiUploadAvailable": false
+                    },
+                    "label": "Bild",
+                    "objectProperty": "fileImage",
+                    "entityProperty": "fileImage"
+                },
+                "link": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\UrlEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "relativeAllowed": false,
+                        "allowedProtocols": [],
+                        "autoScheme": "http"
+                    },
+                    "label": "Link",
+                    "objectProperty": "link",
+                    "entityProperty": "link"
+                },
+                "linkLabel": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
+                    "props": {
+                        "displayInOverview": false,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "mandatory": false,
+                        "draftable": false,
+                        "maxlength": "255",
+                        "multiline": false
+                    },
+                    "label": "Link Label",
+                    "objectProperty": "linkLabel",
+                    "entityProperty": "linkLabel"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "newsletter-impl-common-newsletter-page-controller": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\common\\bo\\NewsletterPageController",
+            "dataSourceName": null,
+            "label": "Newsletter",
+            "pluralLabel": "Newsletters",
+            "iconType": null,
+            "fields": {
+                "recipientCategories": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToManySelectEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "draftable": false,
+                        "targetRemovalStrategy": "prevent",
+                        "embeddedAddEnabled": false,
+                        "filtered": true,
+                        "hiddenIfTargetEmpty": false
+                    },
+                    "label": "Empf\u00e4nger Kategorien",
+                    "objectProperty": "recipientCategories",
+                    "entityProperty": "recipientCategories"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        }
+    },
+    "eiTypeExtensions": [],
+    "eiModificators": {
+        "newsletter-core-newsletter": {
+            "modificator": {
+                "class": "newsletter\\impl\\common\\rocket\\NewsletterSetupModificator",
+                "props": []
+            }
+        }
+    },
+    "launchPads": []
+}
