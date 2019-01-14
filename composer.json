@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "newsletter\\impl": "src/app/newsletter/impl"
+            "newsletter\\impl\\": "src/app/newsletter/impl"
         }
     }
 }
