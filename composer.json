@@ -1,7 +1,7 @@
 {
     "name": "hnm/newsletter-impl",
     "type": "n2n-tmpl-module",
-    "description": "Newsletter impl module for n2n",
+    "description": "Newsletter implementations for module newsletter-core",
     "keywords": ["n2n-tmpl-module", "n2n-module", "n2n"],
     "homepage": "https://n2n.rocks/",
     "license": "MIT",
