@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=7.0",
-        "n2n/n2n-composer-module-installer": "7.1.x-dev"
+        "n2n/n2n-composer-module-installer": "7.1.x-dev",
         "hnm/newsletter-core": "2.0.x-dev"
     },
     "autoload": {
