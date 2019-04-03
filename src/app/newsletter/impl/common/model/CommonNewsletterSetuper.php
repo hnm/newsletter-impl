@@ -81,11 +81,7 @@ class CommonNewsletterSetuper implements RequestScoped {
 			$this->newsletterState->setSimpleUrl($newsletterUrl->pathExt(NewsletterController::ACTION_SIMPLE));
 		}
 		
-		$this->newsletterState->getDtc()->assignModule($moduleManager->getModuleByNs('newsletter\impl\common'), true);
-		if ($moduleManager->containsModuleNs('newsletter\impl\bs')) {
-			$this->newsletterState->getDtc()->assignModule($this->n2nContext->getModuleManager()
-					->getModuleByNs('newsletter\impl\bs'), true);
-		}
+		$this->newsletterState->getDtc()->assignModule($moduleManager->getModuleByNs('newsletter\impl'), true);
 		
 		$this->setupNewsletterControllerConfig();
 		$this->setupTemplateConfig();
