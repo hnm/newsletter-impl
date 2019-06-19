@@ -1,5 +1,5 @@
 {
-	"name": "hnm/newsletter-core",
+	"name": "hnm/newsletter-impl",
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",

@@ -17,6 +17,8 @@ use newsletter\core\controller\NewsletterController;
 
 class CommonNewsletterSetuper implements RequestScoped {
 	
+	private $setupExecuted = false;
+	
 	private $newsletterState;
 	private $n2nContext;
 	private $config;
@@ -33,13 +35,17 @@ class CommonNewsletterSetuper implements RequestScoped {
 		$this->mailManager = $mailManager;
 	}
 	
-	public function setup() {
+	public function setup(bool $forceSetup = false) {
+		if ($this->setupExecuted && ! $forceSetup) return;
+		
 		$this->setupNewsletterState();
 		
 		$this->recipientCategories = $this->config->getRecipientCategories($this->newsletterDao);
 		$this->mailManager->setup(new SwiftMailer(), new SmtpConfig($this->config->getSmtpHost(),
 				$this->config->getSmtpEmail(), $this->config->getSmtpPassword(), $this->config->getSmtpPort(),
 				null, $this->config->getSmtpSecurityMode()));
+		
+		$this->setupExecuted = true;
 	}
 	
 	private function setupNewsletterState() {
