@@ -5,7 +5,9 @@
         "php": ">=7.0",
         "n2n/rocket": "dev-master",
         "hnm/bstmpl": "dev-master",
-        "hnm/newsletter-core": "dev-master"
+        "hnm/newsletter-core": "dev-master",
+        "n2n/n2nutil-bootstrap": "dev-master",
+        "hnm/ch-hnm-util": "dev-master"
     },
 	"require-dev" : {
 		"n2n/hangar" : "dev-master"

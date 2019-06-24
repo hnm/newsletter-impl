@@ -77,5 +77,16 @@
                 "charset": null
             }
         }
+    },
+    "newsletter\\impl\\bs\\bo\\CiSubscriptionForm": {
+        "recipientCategories": {
+            "prop-def": "n2n\\impl\\persistence\\orm\\property\\hangar\\relation\\ManyToManyPropDef",
+            "props": {
+                "targetEntityClass": "newsletter\\core\\bo\\RecipientCategory",
+                "mappedBy": null,
+                "cascadeType": [],
+                "fetchType": "lazy"
+            }
+        }
     }
 }

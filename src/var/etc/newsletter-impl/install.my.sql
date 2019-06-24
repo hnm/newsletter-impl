@@ -64,3 +64,14 @@ CREATE TABLE IF NOT EXISTS `newsletter_impl_common_npc_recipient_categories` (
   PRIMARY KEY (`newsletter_page_controller_id`,`recipient_category_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE IF NOT EXISTS `newsletter_impl_ci_subscription_form` (
+  `id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `newsletter_impl_ci_subscription_form_recipient_categories` (
+  `ci_subscription_form_id` int(11) NOT NULL,
+  `recipient_category_id` int(11) NOT NULL,
+  PRIMARY KEY (`ci_subscription_form_id`,`recipient_category_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+

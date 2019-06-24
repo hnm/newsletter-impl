@@ -8,7 +8,7 @@
             "pluralLabel": "Artikel",
             "iconType": null,
             "identityStringPattern": "{title} [{id}]",
-            "fields": {
+            "props": {
                 "title": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
                     "props": {
@@ -146,7 +146,7 @@
             "label": "Bild",
             "pluralLabel": "Bilder",
             "iconType": null,
-            "fields": {
+            "props": {
                 "fileImage": {
                     "class": "rocket\\impl\\ei\\component\\prop\\file\\FileEiProp",
                     "props": {
@@ -206,7 +206,7 @@
             "label": "Freitext",
             "pluralLabel": "Freitexte",
             "iconType": null,
-            "fields": {
+            "props": {
                 "title": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
                     "props": {
@@ -258,7 +258,7 @@
             "label": "Anrede",
             "pluralLabel": "Anreden",
             "iconType": null,
-            "fields": [],
+            "props": [],
             "commands": [],
             "partialControlOrder": [],
             "overallControlOrder": [],
@@ -272,7 +272,7 @@
             "pluralLabel": "Hauptartikel",
             "iconType": null,
             "identityStringPattern": "{title} [{id}]",
-            "fields": {
+            "props": {
                 "title": {
                     "class": "rocket\\impl\\ei\\component\\prop\\string\\StringEiProp",
                     "props": {
@@ -406,7 +406,7 @@
             "label": "Newsletter",
             "pluralLabel": "Newsletters",
             "iconType": null,
-            "fields": {
+            "props": {
                 "recipientCategories": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToManySelectEiProp",
                     "props": {
@@ -423,6 +423,46 @@
                         "hiddenIfTargetEmpty": false
                     },
                     "label": "Empf\u00e4nger Kategorien",
+                    "objectProperty": "recipientCategories",
+                    "entityProperty": "recipientCategories"
+                }
+            },
+            "commands": [],
+            "partialControlOrder": [],
+            "overallControlOrder": [],
+            "entryControlOrder": []
+        },
+        "newsletter-impl-ci-subscription-form": {
+            "nature": "entity",
+            "entity": "newsletter\\impl\\bs\\bo\\CiSubscriptionForm",
+            "dataSourceName": null,
+            "label": "Ci Subscription Form",
+            "pluralLabel": "Ci Subscription Forms",
+            "iconType": "fa fa-envelope-o",
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
+            "props": {
+                "recipientCategories": {
+                    "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToManySelectEiProp",
+                    "props": {
+                        "displayInOverview": true,
+                        "displayInDetailView": true,
+                        "displayInEditView": true,
+                        "displayInAddView": true,
+                        "constant": false,
+                        "readOnly": false,
+                        "draftable": false,
+                        "targetExtensions": [],
+                        "targetRemovalStrategy": "prevent",
+                        "embeddedAddEnabled": false,
+                        "filtered": true,
+                        "hiddenIfTargetEmpty": false
+                    },
+                    "label": "Empf\u00e4nger-Kategorien",
                     "objectProperty": "recipientCategories",
                     "entityProperty": "recipientCategories"
                 }
