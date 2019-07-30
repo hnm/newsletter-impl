@@ -33,7 +33,7 @@
 	$styleCollection = $newsletterState->getTemplateStyleCollection();
 	
 	$imageLogo = null;
-	if ($fileLogo !== null) {
+	if ($fileLogo !== null && $fileLogo->isValid()) {
 		$imageLogo = new ImageFile($fileLogo);
 	}
 ?>
