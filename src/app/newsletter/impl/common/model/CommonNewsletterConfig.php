@@ -83,4 +83,8 @@ class CommonNewsletterConfig implements RequestScoped {
 	public function getRecipientCategories(NewsletterDao $newsletterDao) {
 		return [];
 	}
+		
+	public function getTemplateViewId() {
+		return '\bstmpl\view\bsTemplate.html';
+	}
 }
