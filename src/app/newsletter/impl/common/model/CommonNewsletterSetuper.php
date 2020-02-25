@@ -100,18 +100,16 @@ class CommonNewsletterSetuper implements RequestScoped {
 		$newsletterControllerConfig->setUnsubscriptionMailRecipient($this->config->getUnsubscriptionMailRecipient());
 		$newsletterControllerConfig->setSubscriptionAllowed($this->config->isSubscriptionAllowed());
 		
-		if ($this->n2nContext->getModuleManager()->containsModuleNs('newsletter\impl\bs')) {
-			$newsletterControllerConfig
-					->setActivationCompleteViewId('\newsletter\impl\bs\view\activationComplete.html')
-					->setActivationViewId('\newsletter\impl\bs\view\activation.html')
-					->setSimpleSubscriptionFormViewId('\newsletter\impl\bs\view\simpleSubscriptionForm.html')
-					->setSubscriptionFormViewId('\newsletter\impl\bs\view\subscriptionForm.html')
-					->setSubscriptionThanksViewId('\newsletter\impl\bs\view\subscriptionThanks.html')
-					->setTemplateViewId('\bstmpl\view\bsTemplate.html')
-					->setUnsubscriptionConfirmationViewId('\newsletter\impl\bs\view\unsubscriptionConfirmation.html')
-					->setUnsubscriptionFormViewId('\newsletter\impl\bs\view\unsubscriptionForm.html');
+		$newsletterControllerConfig
+				->setActivationCompleteViewId('\newsletter\impl\bs\view\activationComplete.html')
+				->setActivationViewId('\newsletter\impl\bs\view\activation.html')
+				->setSimpleSubscriptionFormViewId('\newsletter\impl\bs\view\simpleSubscriptionForm.html')
+				->setSubscriptionFormViewId('\newsletter\impl\bs\view\subscriptionForm.html')
+				->setSubscriptionThanksViewId('\newsletter\impl\bs\view\subscriptionThanks.html')
+				->setTemplateViewId($this->config->getTemplateViewId())
+				->setUnsubscriptionConfirmationViewId('\newsletter\impl\bs\view\unsubscriptionConfirmation.html')
+				->setUnsubscriptionFormViewId('\newsletter\impl\bs\view\unsubscriptionForm.html');
 
-		}
 	}
 	
 	private function setupTemplateConfig() {
