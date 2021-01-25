@@ -405,7 +405,13 @@
             "dataSourceName": null,
             "label": "Newsletter",
             "pluralLabel": "Newsletters",
-            "iconType": null,
+            "iconType": "fas fa-envelope-open",
+            "filterData": {
+                "useAnd": true,
+                "items": [],
+                "groups": []
+            },
+            "defaultSort": [],
             "props": {
                 "recipientCategories": {
                     "class": "rocket\\impl\\ei\\component\\prop\\relation\\ManyToManySelectEiProp",
@@ -414,13 +420,13 @@
                         "displayInDetailView": true,
                         "displayInEditView": true,
                         "displayInAddView": true,
+                        "containerType": "item",
                         "constant": false,
                         "readOnly": false,
-                        "draftable": false,
+                        "mandatory": false,
                         "targetRemovalStrategy": "prevent",
-                        "embeddedAddEnabled": false,
-                        "filtered": true,
-                        "hiddenIfTargetEmpty": false
+                        "hiddenIfTargetEmpty": false,
+                        "maxPicksNum": "20"
                     },
                     "label": "Empf\u00e4nger Kategorien",
                     "objectProperty": "recipientCategories",
