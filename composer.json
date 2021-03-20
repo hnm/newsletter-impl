@@ -20,7 +20,7 @@
 		"n2n/rocket" : "^3",
 		"hnm/bstmpl" : "^2.0.15",
 		"hnm/newsletter-core" : "^2.1",
-		"hnm/ch-hnm-util" : "^7.2.7"
+		"hnm/ch-hnm-util" : "^8"
 	},
 	"autoload" : {
 		"psr-4" : {
