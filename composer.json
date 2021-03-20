@@ -1,27 +1,30 @@
 {
-    "name": "hnm/newsletter-impl",
-    "type": "n2n-tmpl-module",
-    "description": "Newsletter implementations for module newsletter-core",
-    "keywords": ["n2n-tmpl-module", "n2n-module", "n2n"],
-    "homepage": "https://n2n.rocks/",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Thomas Günther",
-            "email": "guenther@hnm.ch"
-        }
-    ],
-    "require": {
-        "php": ">=7.0",
-        "n2n/n2n-composer-module-installer": "dev-master",
-        "n2n/rocket": "dev-master",
-        "hnm/bstmpl": "dev-master",
-        "hnm/newsletter-core": "dev-master",
-        "hnm/ch-hnm-util": "dev-master"
-    },
-    "autoload": {
-        "psr-4": {
-            "newsletter\\impl\\": "src/app/newsletter/impl"
-        }
-    }
+	"name" : "hnm/newsletter-impl",
+	"type" : "n2n-tmpl-module",
+	"description" : "Newsletter implementations for module newsletter-core",
+	"keywords" : [
+		"n2n-tmpl-module",
+		"n2n-module",
+		"n2n"
+	],
+	"homepage" : "https://n2n.rocks/",
+	"license" : "MIT",
+	"authors" : [{
+			"name" : "Thomas Günther",
+			"email" : "guenther@hnm.ch"
+		}
+	],
+	"require" : {
+		"php" : ">=7.0",
+		"n2n/n2n-composer-module-installer" : "^7.1",
+		"n2n/rocket" : "^2.0.16",
+		"hnm/bstmpl" : "^2.0.15",
+		"hnm/newsletter-core" : "dev-master",
+		"hnm/ch-hnm-util" : "^7.2.7"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"newsletter\\impl\\" : "src/app/newsletter/impl"
+		}
+	}
 }
