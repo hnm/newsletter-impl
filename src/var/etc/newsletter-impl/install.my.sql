@@ -9,7 +9,7 @@ CREATE TABLE IF NOT EXISTS `newsletter_impl_common_ci_article` (
   `link_label` varchar(255) DEFAULT NULL,
   `pic_pos` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Daten Export vom Benutzer nicht ausgewählt
 -- Exportiere Struktur von Tabelle kmu-win.newsletter_impl_common_ci_featured_article
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS `newsletter_impl_common_ci_featured_article` (
   `link` varchar(255) DEFAULT NULL,
   `link_label` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Daten Export vom Benutzer nicht ausgewählt
 -- Exportiere Struktur von Tabelle kmu-win.newsletter_impl_common_ci_image
@@ -31,14 +31,14 @@ CREATE TABLE IF NOT EXISTS `newsletter_impl_common_ci_image` (
   `file_image` varchar(255) DEFAULT NULL,
   `link` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Daten Export vom Benutzer nicht ausgewählt
 -- Exportiere Struktur von Tabelle kmu-win.newsletter_impl_common_ci_salutation
 CREATE TABLE IF NOT EXISTS `newsletter_impl_common_ci_salutation` (
   `id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Daten Export vom Benutzer nicht ausgewählt
 -- Exportiere Struktur von Tabelle kmu-win.newsletter_impl_common_ci_wysiwyg
@@ -47,14 +47,14 @@ CREATE TABLE IF NOT EXISTS `newsletter_impl_common_ci_wysiwyg` (
   `title` varchar(255) DEFAULT NULL,
   `text_html` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Daten Export vom Benutzer nicht ausgewählt
 -- Exportiere Struktur von Tabelle kmu-win.newsletter_impl_common_npc
 CREATE TABLE IF NOT EXISTS `newsletter_impl_common_npc` (
   `id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- Daten Export vom Benutzer nicht ausgewählt
 -- Exportiere Struktur von Tabelle kmu-win.newsletter_impl_common_npc_recipient_categories
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `newsletter_impl_common_npc_recipient_categories` (
   `newsletter_page_controller_id` int(10) unsigned NOT NULL,
   `recipient_category_id` int(10) unsigned NOT NULL,
   PRIMARY KEY (`newsletter_page_controller_id`,`recipient_category_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 CREATE TABLE IF NOT EXISTS `newsletter_impl_ci_subscription_form` (
   `id` int(11) NOT NULL,
